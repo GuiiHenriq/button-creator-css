@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Button Creator CSS</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="button-creator">
+    <form id="properties">
+      <h1>Button Creator CSS</h1>
+      <p>Defina as Propriedades Como se Estivesse Digitando um Arquivo CSS</p>
+      <label for="texto">texto</label>
+      <input type="text" name="texto" id="texto" placeholder="Compre Agora">
+      <label for="color">color</label>
+      <input type="color" name="color" id="color">
+      <label for="backgroundColor">background-color</label>
+      <input type="color" name="backgroundColor" id="backgroundColor">
+      <label for="height">height</label>
+      <input type="range" name="height" id="height" min="0" max="200">
+      <label for="width">width</label>
+      <input type="range" name="width" id="width" min="0" max="600">
+      <label for="border">border</label>
+      <input type="text" name="border" id="border" placeholder="Ex: 3px solid #000">
+      <label for="borderRadius">border-radius</label>
+      <input type="range" name="borderRadius" id="borderRadius" min="0" max="20">
+      <label for="fontFamily">font</label>
+      <select name="fontFamily" id="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="monospace">Monospace</option>
+      </select>
+      <label for="fontSize">font-size</label>
+      <input type="number" name="fontSize" id="fontSize" placeholder="Ex: 24px">
+    </form>
+    <section class="result">
+      <button class="button">Clique</button>
+      <p class="css-text">Codigo CSS:</p>
+      <pre><code class="css-code"></code></pre>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
